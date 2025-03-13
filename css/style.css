@@ -1,0 +1,117 @@
+html, body {
+  background-color: #000518;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  outline: 0;
+	overflow:hidden;
+}
+body{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+	width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+svg{
+	width:50%;
+}
+#Layer1 {
+	overflow:initial;
+		z-index: 50;
+	position:relative;
+	/*animation: caca 5s ease forwards;*/
+}
+#Volta-emblem {
+	 stroke: white;
+	 stroke-width: 0.8px;
+	 fill: transparent;
+	 stroke-dasharray: 626, 515;
+	 stroke-dashoffset: 627;
+	 filter:url(#glow);
+	 animation: pulse 12s ease infinite;
+}
+#Layer2{
+position: absolute;
+    fill: none;
+    overflow: initial;
+    width: 501%;
+    left: -165.1%;
+    z-index: 49;
+    top: 22.8%;
+    stroke: #00337936;
+    filter: blur(7px);
+    stroke-width: 7px;
+    stroke-dasharray: 800 95%;
+    stroke-dashoffset: 104%;
+    animation: ecg-lighting 5s linear infinite;
+}
+ path:nth-child(1) {
+
+}
+
+
+ @keyframes pulse {
+	 0% {
+		 stroke-dashoffset: 627;
+		 stroke: transparent;
+		 fill:transparent;
+	}
+	 5% {
+		 stroke-dashoffset: 627;
+		 stroke: #00b7ff;
+		 filter: drop-shadow(0px 0px 6px #00b7ff);
+	}
+	 20% {
+		 filter: drop-shadow(0px 0px 4px #00b7ff);
+	}
+	 25%{
+		 fill:transparent;
+	 }
+	 50% {
+		 stroke-dashoffset: 0;
+		 stroke: #003379;
+		 filter: drop-shadow(0px 0px 0px #1e4ead);
+		 fill:#003379;
+	}
+	75%{
+		fill:transparent;
+	}
+	80%{
+		filter: drop-shadow(0px 0px 4px #00b7ff);
+	}
+	95%{
+				 stroke-dashoffset: 627;
+		 stroke: #00b7ff;
+		 filter: drop-shadow(0px 0px 6px #00b7ff);
+	}
+	100%{
+				 stroke-dashoffset: 627;
+		 stroke: transparent;
+		 fill:transparent;
+	}
+}
+ @keyframes caca{
+	 0%{
+		 top:-7%;
+	 }
+	 100%{
+		 top:0%;
+	 }
+ }
+
+  @keyframes ecg-lighting {
+	 25% {
+		 stroke-dashoffset: 104%;
+	}
+	 100% {
+		 stroke-dashoffset: 170%;
+		 /* stroke-dasharray: 100% 0%; */
+	}
+}
