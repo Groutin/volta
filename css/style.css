@@ -45,7 +45,7 @@ position: absolute;
     left: -165.1%;
     z-index: 49;
     top: 22.8%;
-    stroke: #3db4cb;
+    stroke: #3db4cb75;
     filter: blur(7px);
     stroke-width: 7px;
     stroke-dasharray: 800 95%;
